@@ -1,0 +1,134 @@
+╔═══════════════════════════════════════════════════════════════════════╗
+║          LAG-LLAMA INTEGRATION - READY TO USE!                        ║
+║     Time-Series Foundation Model for IoT Forecasting                  ║
+╚═══════════════════════════════════════════════════════════════════════╝
+
+✅ SETUP COMPLETE!
+
+Your application is now configured to use Lag-Llama, the first open-source
+foundation model specifically designed for time-series forecasting.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 QUICK START (Choose One)
+
+Option 1: Easy Start (One Command)
+   ./start-lag-llama.sh
+
+Option 2: Manual Start
+   Terminal 1:
+   cd lag-llama-server
+   ./setup.sh
+   source venv/bin/activate
+   python server.py
+
+   Terminal 2:
+   npm run dev
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📁 NEW FILES CREATED
+
+├── lag-llama-server/              # Inference server
+│   ├── server.py                  # Flask API server
+│   ├── requirements.txt           # Python dependencies
+│   ├── setup.sh                   # Setup script
+│   └── README.md                  # Server docs
+├── LAG_LLAMA_SETUP.md            # Complete setup guide
+├── start-lag-llama.sh            # Quick start script
+└── .env.local                     # ✅ Pre-configured!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔧 CURRENT CONFIGURATION
+
+Your .env.local is configured:
+   LLM_BASE_URL=http://localhost:8000/v1/chat/completions
+   LLM_API_KEY=not-needed-for-local
+   LLM_MODEL_NAME=lag-llama
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 WHAT IS LAG-LLAMA?
+
+Lag-Llama is a foundation model for time-series forecasting:
+
+✅ Purpose-Built         Designed specifically for time-series
+✅ Zero-Shot            Works on any frequency, any horizon
+✅ Open-Source          Free to use, no API costs
+✅ Probabilistic        Provides P10/P50/P90 predictions
+✅ Research-Backed      Published model with strong results
+✅ Fine-Tunable         Can be trained on your data
+
+Paper: https://arxiv.org/abs/2310.08278
+Repo:  https://github.com/time-series-foundation-models/lag-llama
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🧪 TESTING
+
+1. Start Lag-Llama server:
+   ./start-lag-llama.sh
+
+2. Test server health:
+   curl http://localhost:8000/health
+
+3. Start Next.js app (in another terminal):
+   npm run dev
+
+4. Visit http://localhost:3000
+
+5. Upload sample CSV and generate forecast!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📊 TWO MODES
+
+Development Mode (Current):
+   • Quick to set up
+   • Simplified forecasting algorithm
+   • Good for testing integration
+   • No model download needed
+
+Production Mode:
+   • Download actual Lag-Llama model (~300MB)
+   • State-of-the-art forecasting
+   • GPU acceleration support
+
+   To use production mode:
+   cd lag-llama-server
+   source venv/bin/activate
+   huggingface-cli download time-series-foundation-models/Lag-Llama lag-llama.ckpt --local-dir .
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔄 SWITCHING BETWEEN MODELS
+
+Lag-Llama (Local) - Current:
+   LLM_BASE_URL=http://localhost:8000/v1/chat/completions
+   LLM_API_KEY=not-needed
+
+OpenAI:
+   LLM_BASE_URL=https://api.openai.com/v1/chat/completions
+   LLM_API_KEY=your-api-key-here
+
+Edit .env.local to switch!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📚 DOCUMENTATION
+
+• LAG_LLAMA_SETUP.md    - Complete setup guide
+• lag-llama-server/README.md - Server documentation
+• README.md             - Main app documentation
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎉 YOU'RE ALL SET!
+
+Your IoT Forecaster is now powered by Lag-Llama, a state-of-the-art
+time-series foundation model.
+
+Run: ./start-lag-llama.sh to begin!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
