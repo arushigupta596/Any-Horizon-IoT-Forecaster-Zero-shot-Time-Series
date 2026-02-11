@@ -331,7 +331,7 @@ export default function ForecastPage() {
               <Card>
                 <CardContent className="py-12 text-center text-gray-500">
                   <TrendingUp className="w-12 h-12 mx-auto mb-4 text-gray-400" />
-                  <p>Configure settings and click "Generate Forecast" to begin</p>
+                  <p>Configure settings and click &quot;Generate Forecast&quot; to begin</p>
                 </CardContent>
               </Card>
             )}
