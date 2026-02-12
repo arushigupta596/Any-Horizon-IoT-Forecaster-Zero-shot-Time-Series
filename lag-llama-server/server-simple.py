@@ -160,11 +160,14 @@ def models():
     })
 
 if __name__ == '__main__':
+    import os
+    port = int(os.environ.get('PORT', 8000))
+
     print("=" * 60)
     print("  Lag-Llama Simplified Inference Server")
     print("=" * 60)
     print()
-    print("✅ Server starting on http://localhost:8000")
+    print(f"✅ Server starting on http://0.0.0.0:{port}")
     print()
     print("📊 Features:")
     print("  • Trend-based forecasting")
@@ -180,4 +183,4 @@ if __name__ == '__main__':
     print("=" * 60)
     print()
 
-    app.run(host='0.0.0.0', port=8000, debug=False)
+    app.run(host='0.0.0.0', port=port, debug=False)
