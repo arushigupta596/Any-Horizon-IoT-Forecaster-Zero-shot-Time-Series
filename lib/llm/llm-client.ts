@@ -36,7 +36,6 @@ export async function callLangLlama(
           },
         ],
         temperature,
-        response_format: { type: 'json_object' },
       }),
     });
 
